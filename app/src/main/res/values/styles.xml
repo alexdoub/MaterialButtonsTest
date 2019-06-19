@@ -7,11 +7,4 @@
         <item name="colorAccent">#CC0</item>
     </style>
 
-
-    <style name="ProcoreMaterial.MC" parent="Theme.MaterialComponents">
-
-        <!--This seems to control the ripple color for some themes-->
-        <item name="colorAccent">#000</item>
-    </style>
-
 </resources>
