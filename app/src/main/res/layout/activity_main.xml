@@ -1,108 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-        android:id="@+id/da_root"
+
+<androidx.core.widget.NestedScrollView
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:clipChildren="false"
         android:clipToPadding="false"
         android:padding="10dp"
         tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
+            android:id="@+id/da_root"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Default Button"/>
+            android:orientation="vertical">
 
-    <Button
-            android:text="Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Default Button"/>
 
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Material - Elevated (Default)"/>
-
-    <com.google.android.material.button.MaterialButton
-            android:text="Click Me"
-            android:theme="@style/Theme.MaterialComponents"
-            style="@style/Widget.MaterialComponents.Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-    <com.google.android.material.button.MaterialButton
-            android:text="Click Me"
-            style="@style/Widget.MaterialComponents.Button"
-            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        <Button
+                android:text="Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
 
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Material - Unelevated"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Material - Elevated (Default)"/>
 
-    <com.google.android.material.button.MaterialButton
-            android:text="Click Me"
-            android:theme="@style/Theme.MaterialComponents"
-            android:layout_width="wrap_content"
-            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
-            android:layout_height="wrap_content"/>
+        <com.google.android.material.button.MaterialButton
+                android:text="Click Me"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
-    <com.google.android.material.button.MaterialButton
-            android:text="Click Me"
-            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"
-            android:layout_width="wrap_content"
-            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
-            android:layout_height="wrap_content"/>
-
-
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Material - Outline"/>
-
-    <com.google.android.material.button.MaterialButton
-            android:text="Click Me"
-            android:theme="@style/Theme.MaterialComponents"
-            android:layout_width="wrap_content"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_height="wrap_content"/>
-
-    <com.google.android.material.button.MaterialButton
-            android:text="Click Me"
-            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"
-            android:layout_width="wrap_content"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_height="wrap_content"/>
+        <com.google.android.material.button.MaterialButton
+                android:text="Click Me"
+                android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
 
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Material - Text Button"/>
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Material - Unelevated"/>-->
 
-    <com.google.android.material.button.MaterialButton
-            android:text="Click Me"
-            android:theme="@style/Theme.MaterialComponents"
-            android:layout_width="wrap_content"
-            style="@style/Widget.MaterialComponents.Button.TextButton"
-            android:layout_height="wrap_content"/>
+        <!--<com.google.android.material.button.MaterialButton-->
+        <!--android:text="Click Me"-->
+        <!--android:theme="@style/Theme.MaterialComponents"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--style="@style/Widget.MaterialComponents.Button.UnelevatedButton"-->
+        <!--android:layout_height="wrap_content"/>-->
 
-    <com.google.android.material.button.MaterialButton
-            android:text="Click Me"
-            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"
-            android:layout_width="wrap_content"
-            style="@style/Widget.MaterialComponents.Button.TextButton"
-            android:layout_height="wrap_content"/>
-
-
-    <!--android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"-->
-    <!--android:theme="@style/Theme.MaterialComponents.NoActionBar"-->
+        <!--<com.google.android.material.button.MaterialButton-->
+        <!--android:text="Click Me"-->
+        <!--android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--style="@style/Widget.MaterialComponents.Button.UnelevatedButton"-->
+        <!--android:layout_height="wrap_content"/>-->
 
 
-</LinearLayout>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Material - Outline"/>
+
+        <com.google.android.material.button.MaterialButton
+                android:text="Click Me"
+                android:theme="@style/Theme.MaterialComponents"
+                android:layout_width="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+                android:text="Click Me"
+                android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"
+                android:layout_width="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_height="wrap_content"/>
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Material - Text Button"/>
+
+        <com.google.android.material.button.MaterialButton
+                android:text="Click Me"
+                android:theme="@style/Theme.MaterialComponents"
+                android:layout_width="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+                android:text="Click Me"
+                android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"
+                android:layout_width="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_height="wrap_content"/>
+
+
+        <!--More themes to try? But they didnt appear to change anything...-->
+        <!--android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"-->
+        <!--android:theme="@style/Theme.MaterialComponents.NoActionBar"-->
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Testing!"/>
+
+        <com.google.android.material.button.MaterialButton
+                android:text="Cancel"
+                android:theme="@style/ProcoreMaterial.MC"
+                android:layout_width="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:textColor="@color/dark_text"
+                android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+                android:text="Save 8 Email"
+                android:theme="@style/ProcoreMaterial.MC"
+                android:layout_width="wrap_content"
+                app:strokeColor="@color/dark_text"
+                android:textColor="@color/dark_text"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+                android:text="Save"
+                android:theme="@style/ProcoreMaterial.MC"
+                android:layout_width="wrap_content"
+                android:textColor="@color/light_text"
+                android:backgroundTint="@color/dark_btn"
+                app:rippleColor="#AAA"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
