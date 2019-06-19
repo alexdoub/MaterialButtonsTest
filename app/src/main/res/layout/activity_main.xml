@@ -138,8 +138,18 @@
                 android:theme="@style/ProcoreMaterial.MC"
                 android:layout_width="wrap_content"
                 android:textColor="@color/light_text"
+                app:rippleColor="#BBB"
                 android:backgroundTint="@color/dark_btn"
-                app:rippleColor="#AAA"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+                android:text="Create"
+                android:theme="@style/ProcoreMaterial.MC"
+                android:layout_width="wrap_content"
+                android:textColor="@color/light_text"
+                android:backgroundTint="@color/orange_btn"
+                app:rippleColor="#D30"
                 style="@style/Widget.MaterialComponents.Button.TextButton"
                 android:layout_height="wrap_content"/>
 

@@ -2,7 +2,6 @@
 
      <!--Base application theme.-->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">#CC0</item>
@@ -10,23 +9,9 @@
 
 
     <style name="ProcoreMaterial.MC" parent="Theme.MaterialComponents">
-        <!-- Customize your theme here. -->
-        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
-        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+
+        <!--This seems to control the ripple color for some themes-->
         <item name="colorAccent">#000</item>
-
-        <item name="rippleColor">#BBB</item>
     </style>
-
-    <!--<style name="ProcoreMaterial.MC.L.DAB" parent="Theme.MaterialComponents.Light.DarkActionBar">-->
-        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
-        <!--&lt;!&ndash;<item name="colorPrimary">@color/colorPrimary</item>&ndash;&gt;-->
-        <!--&lt;!&ndash;<item name="colorPrimaryDark">@color/colorPrimaryDark</item>&ndash;&gt;-->
-        <!--&lt;!&ndash;<item name="colorAccent">#F00</item>&ndash;&gt;-->
-
-        <!--<item name="rippleColor">#BBB</item>-->
-    <!--</style>-->
-
-
 
 </resources>
