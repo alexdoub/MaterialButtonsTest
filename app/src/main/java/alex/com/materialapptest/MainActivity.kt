@@ -1,7 +1,8 @@
 package alex.com.materialapptest
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.button.MaterialButton
 
 class MainActivity : AppCompatActivity() {
 
