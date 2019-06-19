@@ -124,6 +124,7 @@
                 android:theme="@style/ProcoreMaterial.MC"
                 android:layout_width="wrap_content"
                 style="@style/Widget.MaterialComponents.Button.TextButton"
+                app:rippleColor="#BBB"
                 android:textColor="@color/dark_text"
                 android:layout_height="wrap_content"/>
 
@@ -132,6 +133,7 @@
                 android:theme="@style/ProcoreMaterial.MC"
                 android:layout_width="wrap_content"
                 app:strokeColor="@color/dark_btn"
+                app:rippleColor="#BBB"
                 android:textColor="@color/dark_text"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_height="wrap_content"/>

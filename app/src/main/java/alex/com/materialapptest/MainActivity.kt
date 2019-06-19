@@ -20,9 +20,8 @@ class MainActivity : AppCompatActivity() {
         super.onStart()
 
 
-        val everySecond = Observable.interval(2, TimeUnit.SECONDS)
-//        val andThenOne = everySecond.delay(500, TimeUnit.MILLISECONDS)
-//        Observable.merge(everySecond, andThenOne)
+        val timer = Observable.interval(2, TimeUnit.SECONDS)
+            .delay(5, TimeUnit.SECONDS)
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe {
                 toggleButtons()
