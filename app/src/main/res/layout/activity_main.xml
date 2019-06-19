@@ -15,6 +15,8 @@
             android:id="@+id/da_root"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
             android:orientation="vertical">
 
         <TextView
@@ -48,24 +50,24 @@
                 android:layout_height="wrap_content"/>
 
 
-        <!--<TextView-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="Material - Unelevated"/>-->
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Material - Unelevated"/>
 
-        <!--<com.google.android.material.button.MaterialButton-->
-        <!--android:text="Click Me"-->
-        <!--android:theme="@style/Theme.MaterialComponents"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--style="@style/Widget.MaterialComponents.Button.UnelevatedButton"-->
-        <!--android:layout_height="wrap_content"/>-->
+        <com.google.android.material.button.MaterialButton
+                android:text="Click Me"
+                android:theme="@style/Theme.MaterialComponents"
+                android:layout_width="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_height="wrap_content"/>
 
-        <!--<com.google.android.material.button.MaterialButton-->
-        <!--android:text="Click Me"-->
-        <!--android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--style="@style/Widget.MaterialComponents.Button.UnelevatedButton"-->
-        <!--android:layout_height="wrap_content"/>-->
+        <com.google.android.material.button.MaterialButton
+                android:text="Click Me"
+                android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"
+                android:layout_width="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_height="wrap_content"/>
 
 
         <TextView
