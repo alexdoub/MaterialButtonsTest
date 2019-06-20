@@ -1,8 +1,15 @@
 package alex.com.materialapptest
 
+import android.content.Context
 import android.os.Bundle
+import android.util.AttributeSet
+import android.view.ContextMenu
+import android.view.Menu
+import android.view.MenuItem
+import android.view.View
 import android.widget.Button
 import android.widget.LinearLayout
+import android.widget.Switch
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.button.MaterialButton
 import io.reactivex.Observable
@@ -16,16 +23,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    override fun onStart() {
-        super.onStart()
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return super.onCreateOptionsMenu(menu)
+    }
 
-
-        val timer = Observable.interval(2, TimeUnit.SECONDS)
-            .delay(5, TimeUnit.SECONDS)
-            .observeOn(AndroidSchedulers.mainThread())
-            .subscribe {
-                toggleButtons()
-            }
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        toggleButtons()
+        return super.onOptionsItemSelected(item)
     }
 
     fun toggleButtons() {
