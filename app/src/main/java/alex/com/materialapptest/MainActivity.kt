@@ -1,20 +1,13 @@
 package alex.com.materialapptest
 
-import android.content.Context
 import android.os.Bundle
-import android.util.AttributeSet
-import android.view.ContextMenu
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import android.widget.LinearLayout
-import android.widget.Switch
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.button.MaterialButton
-import io.reactivex.Observable
-import io.reactivex.android.schedulers.AndroidSchedulers
-import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        getMenuInflater().inflate(R.menu.main_menu, menu);
+        menuInflater.inflate(R.menu.main_menu, menu)
         return super.onCreateOptionsMenu(menu)
     }
 
@@ -43,5 +36,9 @@ class MainActivity : AppCompatActivity() {
                 child.isEnabled = !child.isEnabled
             }
         }
+    }
+
+    fun derp(view: View) {
+        println("derp")
     }
 }

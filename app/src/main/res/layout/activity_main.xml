@@ -125,6 +125,7 @@
                 android:layout_width="wrap_content"
                 style="@style/Widget.MaterialComponents.Button.TextButton"
                 app:rippleColor="#BBB"
+                android:backgroundTint="@color/light_btn"
                 android:textColor="@color/dark_text"
                 android:layout_height="wrap_content"/>
 
@@ -132,6 +133,7 @@
                 android:text="Save 8 Email"
                 android:theme="@style/Theme.MaterialComponents"
                 android:layout_width="wrap_content"
+                android:backgroundTint="@color/light_btn"
                 app:strokeColor="@color/dark_btn"
                 app:rippleColor="#BBB"
                 android:textColor="@color/dark_text"
@@ -159,5 +161,11 @@
                 android:layout_height="wrap_content"/>
 
 
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                app:rippleColor="#F00"
+                android:onClick="derp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
     </LinearLayout>
+
 </androidx.core.widget.NestedScrollView>
