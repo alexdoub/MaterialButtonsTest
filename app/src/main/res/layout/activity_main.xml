@@ -129,11 +129,12 @@
                 android:textColor="@color/dark_text"
                 android:layout_height="wrap_content"/>
 
+        <!--@@TODO FIX! this backgroundTint removes the border, but we need the tint for disabledState-->
+        <!--android:backgroundTint="@color/light_btn"-->
         <com.google.android.material.button.MaterialButton
                 android:text="Save 8 Email"
                 android:theme="@style/Theme.MaterialComponents"
                 android:layout_width="wrap_content"
-                android:backgroundTint="@color/light_btn"
                 app:strokeColor="@color/dark_btn"
                 app:rippleColor="#BBB"
                 android:textColor="@color/dark_text"
