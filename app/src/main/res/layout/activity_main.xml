@@ -13,7 +13,7 @@
 
     <LinearLayout
             android:id="@+id/da_root"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:clipChildren="false"
             android:clipToPadding="false"
@@ -159,10 +159,8 @@
                 style="@style/Widget.MaterialComponents.Button.TextButton"
                 android:layout_height="wrap_content"/>
 
-
         <com.google.android.material.floatingactionbutton.FloatingActionButton
                 app:rippleColor="#F00"
-                android:onClick="derp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
     </LinearLayout>
