@@ -4,10 +4,13 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import android.widget.Button
 import android.widget.LinearLayout
+import android.widget.Switch
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.SwitchCompat
 import com.google.android.material.button.MaterialButton
 import io.reactivex.Completable
 import io.reactivex.Observable
@@ -30,6 +33,12 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.main_menu, menu)
+
+//        val item = menu!!.findItem(R.id.switchForActionBar) as SwitchCompat
+//        item.setOnCheckedChangeListener { buttonView, isChecked ->
+//            println("Checked: ${isChecked}")
+//        }
+
         return super.onCreateOptionsMenu(menu)
     }
 
@@ -48,6 +57,14 @@ class MainActivity : AppCompatActivity() {
                 child.isEnabled = !child.isEnabled
             }
         }
+    }
+
+    fun hi(view: View) {
+        println("hi")
+    }
+
+    fun hi2(view: View) {
+        println("hi")
     }
 
     //RESULTS: If you're already on the main thread your block will synchronously run the subscribe block. Else it is scheduled by the handler
