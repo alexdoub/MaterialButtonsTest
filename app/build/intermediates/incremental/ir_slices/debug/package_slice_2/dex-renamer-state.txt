@@ -1,0 +1,4 @@
+#Tue Jul 30 09:02:23 PDT 2019
+base.0=/Users/alexd/Documents/Procore/MaterialButtonsTest/app/build/intermediates/transforms/dexMerger/debug/2
+path.0=classes.dex
+renamed.0=classes.dex
