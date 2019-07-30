@@ -6,10 +6,4 @@
 						android:title=""
 						app:actionLayout="@layout/menu_textview"
 						app:showAsAction="always"/>
-
-		<item
-						android:id="@+id/myswitch"
-						android:title="E/D"
-						app:actionLayout="@layout/menu_switch"
-						app:showAsAction="always"/>
 </menu>
