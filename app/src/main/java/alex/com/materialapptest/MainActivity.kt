@@ -10,6 +10,7 @@ import android.widget.LinearLayout
 import android.widget.Switch
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.SwitchCompat
 import com.google.android.material.button.MaterialButton
 import io.reactivex.Completable
@@ -34,7 +35,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.main_menu, menu)
 
-//        val item = menu!!.findItem(R.id.switchForActionBar) as SwitchCompat
+//        val item = menu!!.findItem(R.id.mytextview) as MenuItem
+//        val button: AppCompatButton = item.actionView.findViewById(R.id.menu_button)
+//        val switch: SwitchCompat = item.actionView.findViewById(R.id.menu_switch)
 //        item.setOnCheckedChangeListener { buttonView, isChecked ->
 //            println("Checked: ${isChecked}")
 //        }

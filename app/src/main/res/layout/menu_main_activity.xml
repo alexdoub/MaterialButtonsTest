@@ -5,7 +5,8 @@
 							android:gravity="center_vertical"
 							android:orientation="horizontal">
 
-		<Button
+		<AppCompatButton
+						android:id="@+id/menu_button"
 						android:layout_width="wrap_content"
 						android:text="big"
 						android:textSize="20dp"
@@ -16,7 +17,7 @@
 
 
 		<androidx.appcompat.widget.SwitchCompat
-						android:id="@+id/switchForActionBar"
+						android:id="@+id/menu_switch"
 						android:layout_width="wrap_content"
 						android:onClick="hi2"
 						android:layout_height="wrap_content"
